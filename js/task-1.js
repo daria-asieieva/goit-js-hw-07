@@ -9,7 +9,7 @@ elements.forEach(element => {
     console.log(`Category: ${elementName.textContent}`);
 
     const elementQuantity = element.querySelectorAll('ul li');
-    console.log(`Elemets: ${elementQuantity.length}`);
+    console.log(`Elements: ${elementQuantity.length}`);
 });
 
 
