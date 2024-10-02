@@ -24,3 +24,21 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+`use strict`
+
+const gallery = document.querySelector(".gallery");
+
+images.forEach(image => {
+  const listItem = document.createElement('li');
+  listItem.classList.add('list-item');
+
+  const img = document.createElement('img');
+  img.src = image.url;
+  img.alt = image.alt;
+  img.classList.add("gallery-image");
+
+  listItem.append(img);
+  gallery.append(listItem);
+});
+
